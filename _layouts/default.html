@@ -27,7 +27,7 @@
         <script src="../vendor/js/flexibility.js"></script>
         <script src="../assets/js/main.js"></script>
         <script src="../assets/js/projects.js"></script>
-        <script type="text/javascript">   
+        <!-- <script type="text/javascript">   
             $(document).ready( function() {
             
             $("#navDiv").load("../_includes/nav.html");  
@@ -38,19 +38,46 @@
             $("#footerDiv").load("../_includes/footer.html");  
             $("#scriptsDiv").load("../_includes/scripts.html");  
           
-            // $("#footers").load("common/footer.html");
+            $("#footers").load("common/footer.html");
             
             });
-            </script> 
+            </script>  -->
             
     </head>
 <body>
-    <div id="navDiv" class="section-wrapper"></div>
-    <div id="aboutDiv" class="section-wrapper"></div>
+    <div id="navDiv" class="section-wrapper">
+        
+        <section class="head" id="nav">
+            <div class="head-inner-wrap">
+                <div class="profile-pic-div animated">
+                    <a href="#about" class="profile-pic-link"><img src="../assets/images/pp.jpg" class="profile-pic"/></a>
+                </div>
+                <div class="head-name head-title animated" id="head-name">김 상 재</div>
+                <div class="head-punchline animated">Web Developer</div>
+                <div class="head-punchline animated">      
+                        안녕하세요.<br>
+                        열정이 넘치는 BACK-END 웹 개발자 김상재입니다.<br>
+                        포기하지 않는 의지와 친화력이 저의 장점입니다.
+                </div>
+
+                <div class="head-menu-wrap">
+                    <a class="semi-transparent-button with-border nav-links" href="#about">ABOUT ME</a>
+                    <a class="semi-transparent-button with-border nav-links" href="#skills">SKILLS</a>
+                    <a class="semi-transparent-button with-border nav-links" href="#projects">PROJECTS</a>
+                    <a class="semi-transparent-button with-border nav-links" href="#blog-posts">CONTACT</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div id="aboutDiv" class="section-wrapper">
+
+    </div>
     <div id="skillsDiv" class="section-wrapper"></div>
     <div id="projectsDiv" class="section-wrapper"></div>
     <div id="extraDiv" class="section-wrapper"></div>
     <div id="footerDiv" class="section-wrapper"></div>
     <div id="scriptsDiv" class="section-wrapper"></div>
+   
 </body>
 </html>
