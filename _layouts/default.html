@@ -1,24 +1,56 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    
-    {% include head.html %}
-
-<body>
-
-    {% include nav.html %}
-
-    {% include about.html %}
-
-    {% include skills.html %}
-
-    {% include projects.html %}
-
-    {% include blogs.html %}
+<html lang="ko">
+    <!-- <include src="../_includes/head.html"></include> -->
+    <head>
+        <!-- {% if site.google_analytics %}
+            {% include googeanalytics.html %}
+        {% endif %} -->
         
-    {% include extra.html %}
-
-    {% include footer.html %}
-
-    {% include scripts.html %}
+        <title>Developer Kim SangJae</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-site-verification" content="k4p92PduVR_7ZqAlB8-OMnONNOl9GkkmUh4dlKfbY7o" />
+        
+        <link rel="stylesheet" href="../vendor/css/normalize.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="../vendor/css/hint.base.min.css"/>
+        <link rel="stylesheet" href="../vendor/css/semi-transparent-buttons.css"/>
+        <link rel="stylesheet" href="../assets/css/progress.css"/>
+        <link rel="stylesheet" href="../assets/css/main.css"/>
+        <link rel="stylesheet" href="../assets/css/card.css"/>
+        <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+        <meta name="description" content="Portfolio - Abhishek Nagekar | Full stack web development, open source and information security">
+        <!-- <script src="https://code.jquery.com/jquery-3.7.0.js"></script> -->
+        <script src="../vendor/js/jquery-3.3.1.js"></script>
+        <script src="../vendor/js/jquery.smooth-scroll.js"></script>
+        <script src="../vendor/js/css-polyfills.min.js"></script>
+        <script src="../vendor/js/flexibility.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/projects.js"></script>
+        <script type="text/javascript">   
+            $(document).ready( function() {
+            
+            $("#navDiv").load("../_includes/nav.html");  
+            $("#aboutDiv").load("../_includes/about.html");  
+            $("#skillsDiv").load("../_includes/skills.html");  
+            $("#projectsDiv").load("../_includes/projects.html");  
+            $("#extraDiv").load("../_includes/extra.html");  
+            $("#footerDiv").load("../_includes/footer.html");  
+            $("#scriptsDiv").load("../_includes/scripts.html");  
+          
+            // $("#footers").load("common/footer.html");
+            
+            });
+            </script> 
+            
+    </head>
+<body>
+    <div id="navDiv" class="section-wrapper"></div>
+    <div id="aboutDiv" class="section-wrapper"></div>
+    <div id="skillsDiv" class="section-wrapper"></div>
+    <div id="projectsDiv" class="section-wrapper"></div>
+    <div id="extraDiv" class="section-wrapper"></div>
+    <div id="footerDiv" class="section-wrapper"></div>
+    <div id="scriptsDiv" class="section-wrapper"></div>
 </body>
 </html>

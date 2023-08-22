@@ -31,7 +31,8 @@ img {
 }
 
 .head-title {
-  display: inline-block;
+  display: block;
+  text-align: center;
   -webkit-transition: color ease-in-out 0.3s;
   transition: color ease-in-out 0.3s;
   font-size: 56px;
@@ -84,6 +85,7 @@ img {
   text-align: center;
   color: #fff;
   margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 20px;
   font-size: 1.25rem;
 }
@@ -128,15 +130,54 @@ img {
   text-align: justify;
 }
 
+.justify-center {
+  text-align: center;
+}
+
 .progress-bars {
   margin-top: 30px;
 }
+#about {
+  display: block; 
+  min-height: 60vh;
+}
+#about-text {
+  margin-bottom: 50px;
+}
+.aboutBoxList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.aboutBox {
+  width: 400px;
+  height: 200px;
+}
+.aboutIcon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  margin: 2rem 2rem 0 0;
+}
+.aboutIcon img {
+  width: 100%;
+}
+.aboutInfo {
+  display: inline-block;
+}
+.infoTitle {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
 
 .skills-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+      /* grid-template-columns: 40% 60%; */
   grid-gap: 20px;
 }
 
@@ -144,7 +185,17 @@ img {
   width: 90%;
   margin: 0 auto;
 }
-
+.skillImgList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.skillImgList img{
+  width: 200px;
+  height: 100px;
+  border-radius: 15px;
+  margin : 5px;
+}
 .center-align {
   text-align: center;
 }
@@ -268,7 +319,8 @@ img {
 }
 
 .footer {
-  background-color: #444;
+  border-top: 10px solid white;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,6 +568,7 @@ a {
     display: block;
     text-align: center;
     font-size: 2.75rem;
+    margin-bottom: 30px;
   }
   
   .head-punchline {
@@ -525,8 +578,8 @@ a {
   .skills-grid {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
+    -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
   }
 
   .set-size {
