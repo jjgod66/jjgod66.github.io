@@ -139,10 +139,10 @@ img {
 }
 #about {
   display: block; 
-  min-height: 60vh;
+  min-height: 100vh;
 }
 #about-text {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 .aboutBoxList {
   display: grid;
@@ -150,8 +150,13 @@ img {
   grid-template-rows: 1fr 1fr 1fr;
 }
 .aboutBox {
-  width: 400px;
-  height: 200px;
+  width: 350px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  padding-left: 40px;
+  padding-top: 60px;
 }
 .aboutIcon {
   display: inline-block;
